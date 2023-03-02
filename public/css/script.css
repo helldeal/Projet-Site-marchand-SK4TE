@@ -1,0 +1,158 @@
+#contentlogin {
+	min-height: 100vh;
+	font-family: "Roboto";
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 20px;
+	z-index: 100000;
+	background-color: rgba(0, 0, 0, 0);
+	background: url("wallpaperflare.jpg") center fixed;
+	background-size: cover;
+	max-width: 100vw;
+}
+
+/*         --------------------------------------          FOOTER       ---------------------------------       */
+.footer {
+	width: 100%;
+	background: var(--classic-black-color-dark);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	z-index: 1000;
+	padding: 25px;
+	bottom:0
+}
+.footerdown {
+	width: 100%;
+	background: var(--classic-black-color-dark);
+	display: flex;
+	justify-content: center;
+	padding: 25px;
+	gap: 25px;
+	bottom:0
+}
+.footerup {
+	width: 100%;
+	background: var(--classic-black-color-dark);
+	display: flex;
+	justify-content: center;
+	padding: 25px;
+	bottom:0
+}
+.footerbox {
+	padding: 0 10px;
+	width: 23%;
+	display: flex;
+	justify-content: start;
+	align-items: flex-start;
+	flex-direction: column;
+} 
+.footerup .footcontent {
+	color: var(--font-color);
+	display: flex;
+	text-align: center;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	width: 18%;
+	padding: 0 10px;
+}
+.footerup .footcontent .logo{
+	color: var(--font-color);
+	font-family: "Roboto", sans-serif;
+	letter-spacing: 2px;
+	display: flex;
+	font-style: italic;
+	font-size: 40px;
+	font-weight: 500;
+}
+.footerup .footcontent span{
+	color: var(--font-color);
+	display: flex;
+	border: 0;
+}
+.footerup span{ 
+	border: 1px solid #ccc;
+	display: block;
+	height: 50px;
+ }
+ .footerdown span{
+	display:block;
+	margin-bottom: 5px;
+	width:100%; 
+	border-top: 1px solid #ccc; 
+ }
+ .reseauinsta{
+	width: 100%;
+ }
+ .reseaux{
+	display: flex;
+	justify-content: space-evenly;
+	padding: 15px;
+	fill: var(--font-color);
+ }
+.footerup svg {
+	fill: var(--font-color);
+	top: 4px;
+	margin-right: 10px;
+}
+.footertitle {
+	text-align: left;
+	padding: 10px 0;
+	color: var(--font-color);
+}
+.footersubtitle {
+	padding: 4px;
+	color: var(--font-color);
+	text-align: left;
+}
+.redir {
+	display: flex;
+	flex-direction: row;
+}
+.redir:hover .redirtxt {
+	font-weight: bold;
+	text-decoration: underline;
+}
+.redir:hover .redirarrow {
+	transform: translateX(5px);
+	font-weight: bold;
+}
+.redirarrow {
+	transition: 0.1s;
+}
+footer {
+	height: 30px;
+	background: var(--font-color);
+	display: none;
+}
+.pitch {
+	margin: 100px 400px 100px 400px;
+	line-height: 27px;
+}
+
+@media screen and (max-width: 800px){
+	.footerup {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.footerup span {
+		height: 1px;
+		width: 35%;
+	}
+	
+}
+
+@media screen and (max-width: 550px){
+	.footerdown {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.footerdown .reseaux {
+		width: 130px;
+	}
+}

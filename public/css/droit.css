@@ -1,0 +1,40 @@
+
+
+body,html{
+    color: var(--calssic-black-color);
+}
+
+nav {
+	background-color: var(--filter-menu-color);
+}
+
+header .over-container ul .logo-nav .header-title {
+	color: white;
+}
+
+nav .under-container {
+	display: none;
+}
+
+/* --------------- DROIT --------------- */
+.droit-container{
+	background-color: var(--shiping);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+    min-height: 100vh;
+}
+.droit-titre{
+	font-size: 30px;
+	font-weight: bold;
+	margin-top: 100px;
+	color: var(--classic-black-color);
+	padding: 20px;
+}
+.droit-lorem{
+    font-size: 20px;
+	width: 50%;
+	text-align: center;
+	color: var(--classic-black-color);
+}

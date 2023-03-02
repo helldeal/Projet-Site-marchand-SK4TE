@@ -1,0 +1,71 @@
+
+
+body,html{
+    color: var(--calssic-black-color);
+}
+
+nav {
+	background-color: var(--filter-menu-color);
+}
+
+header .over-container ul .logo-nav .header-title {
+	color: white;
+}
+
+nav .under-container {
+	display: none;
+}
+
+/* --------------- information de livraison --------------- */
+
+
+.delivery-info-container{
+	background-color: var(--shiping);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+    min-height: 100vh;
+	font-family: inherit;
+    padding: 120px 0;
+}
+
+.delivery-info-container .titre{
+    width: 50%;
+    font-size: 40px;
+    text-align: start;
+    padding: 40px 0;
+}
+
+.details-retour{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 50%;
+    padding: 40px 0;
+}
+
+.details-retour a{
+    color: var(--calssic-black-color);
+    padding: 10px 0;
+}
+
+table{
+    width: 50%;
+    min-height: 300px;
+    background-color: var(--border-element-color);
+}
+tr , td{
+    font-size: 20px;
+    color: var(--calssic-black-color);
+    text-align: center;
+    background-color: var(--shiping);
+}
+
+.delivery-info-container .pays{
+    width: 50%;
+}
+.delivery-info-container ul{
+    padding: 10px 0;
+}

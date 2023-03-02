@@ -1,0 +1,224 @@
+/* MODIFICATION HEADER (adaptation pour page blanche) */
+
+
+body,html{
+    color: var(--calssic-black-color);
+}
+
+nav {
+	background-color: var(--filter-menu-color);
+}
+
+header .over-container ul .logo-nav .header-title {
+	color: white;
+}
+
+nav .under-container {
+	display: none;
+}
+
+/* CONTENEUR  */
+
+.contentCheckout{
+    display: flex;
+    height: 100%;
+    flex-direction: row;
+    align-items: top;
+    justify-content: center;
+}
+
+/* split de la page en deux parties égales */
+
+.contentCheckout .info-livraison {
+    align-items: center;
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--shiping);
+    padding: 200px 30px 30px 30px;
+}
+
+
+.contentCheckout .content-livraison{/* conteneur du form et du titre de la partie livraison */
+    width: 70%;
+}
+
+.contentCheckout .form-livraison{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* styles des inputs du form */
+.contentCheckout .form-livraison input, select{
+    font-size: 16px;
+    width: 100%;
+    color: var(--calssic-black-color);
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid var(--border-element-color);
+    background-color: var(--transparent);
+    padding: 10px;
+}
+
+/* mise en évidence des erreurs du formulaire */
+
+.contentCheckout .form-livraison input:not(:placeholder-shown):not(:focus):invalid{
+    border: 1px solid var(--error-red);
+}
+
+
+/* barre entre le titre et le formulaire */
+.contentCheckout .split-bar{
+    margin: 20px 0px;
+    width: 100%;
+    height: 1px;
+    background-color: var(--border-element-color);
+}
+
+/* style du titre de la partie livraison */
+
+.contentCheckout .title-livraison{
+    align-self: flex-start;
+    font-size: 25px;
+}
+/* style du bouton de payement */
+.contentCheckout .pay-button{
+    font-size: 24px;
+    align-self: center;
+    padding: 10px;
+    margin-top: 20px;
+    width: 40%;
+    color: var(--font-color);
+    border-radius: 45px;
+    border: 1px solid var(--classic-blue-color);
+    background-color: var(--classic-blue-color);
+}
+
+.contentCheckout .pay-button:active{
+    border: white 1px solid;
+}
+.contentCheckout .pay-button:hover{
+    background-color: var(--classic-blue-hover-color);
+}
+
+
+/* imbrication de 2 inputs sur la même ligne */
+
+.subdiv-form{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    
+}
+
+/* espacement des input du formulaire */
+
+.contentCheckout input{
+    margin-top: 5PX;
+}
+.contentCheckout label {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.contentCheckout .label-droit , .contentCheckout .label-gauche{
+    display: flex;
+    flex-direction: column;
+}
+
+.contentCheckout .label-droit{
+    padding-right: 8px;
+    width: 100%;
+}
+.contentCheckout .label-gauche{
+    width: 100%;
+}
+
+.contentCheckout .label-droit label{
+    padding-left: 8px;
+}
+
+.contentCheckout .subdiv-form .nom, .contentCheckout .subdiv-form .ville{
+    margin-left: 8px;
+
+    margin-right: 8px;
+}
+.contentCheckout .subdiv-form .prenom, .contentCheckout .subdiv-form .codepostal{
+    margin-right:8px ;
+}
+
+
+
+
+
+
+
+
+
+/*  partie résumé commande  */
+
+
+
+.contentCheckout .prix-total{
+    font-size: 25px;
+}
+
+.contentCheckout .produits{
+    display: flex;
+    flex-direction: row;
+}
+.contentCheckout .content-summary{
+    align-items: center;
+    width: 70%;
+}
+
+/* espacement du nom de la quantité et du prix du produit entre eux */
+
+.contentCheckout .nom-prod{
+    width: 50%;
+    text-align: start;
+}
+.contentCheckout .quantité{
+    width: 20%;
+    text-align: center;
+    font-weight:900;
+    color: black;
+}
+.contentCheckout .prix{
+    width: 30%;
+    text-align: end;
+}
+.contentCheckout .content-prix{
+    padding: 20px;
+    font-size: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+/* style du message lorsque la commande est vide */
+.contentCheckout .emptycart{
+    font-size: 20px;
+}
+
+
+@media screen and (max-width: 1500px){
+    .contentCheckout{
+        flex-direction: column;
+    }
+    .contentCheckout .info-livraison , .contentCheckout .résumé-commande{
+        width: 100%;
+        min-height: 80%;
+    }
+}
+@media screen and (max-width: 550px){
+    .contentCheckout .content-summary, .contentCheckout .content-livraison{
+        width: 90%;
+    }
+    .contentCheckout .pay-button{
+        width: 60%;
+    }
+}

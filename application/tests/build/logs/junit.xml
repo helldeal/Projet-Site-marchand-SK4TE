@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="ProductControllerTest" file="/home/E214194U/public_html/CI/application/tests/controller/ProductControllerTest.php" tests="7" assertions="7" errors="0" warnings="0" failures="0" skipped="0" time="0.292724">
+    <testcase name="testVueDisplayProductNoId" class="ProductControllerTest" classname="ProductControllerTest" file="/home/E214194U/public_html/CI/application/tests/controller/ProductControllerTest.php" line="11" assertions="1" time="0.014043"/>
+    <testcase name="testVueDisplayProductWrongId" class="ProductControllerTest" classname="ProductControllerTest" file="/home/E214194U/public_html/CI/application/tests/controller/ProductControllerTest.php" line="16" assertions="1" time="0.002699"/>
+    <testcase name="testVueDisplayProduct" class="ProductControllerTest" classname="ProductControllerTest" file="/home/E214194U/public_html/CI/application/tests/controller/ProductControllerTest.php" line="21" assertions="1" time="0.003805"/>
+    <testcase name="testVueUpdateProductNoId" class="ProductControllerTest" classname="ProductControllerTest" file="/home/E214194U/public_html/CI/application/tests/controller/ProductControllerTest.php" line="27" assertions="1" time="0.091148"/>
+    <testcase name="testVueUpdateProductWrongId" class="ProductControllerTest" classname="ProductControllerTest" file="/home/E214194U/public_html/CI/application/tests/controller/ProductControllerTest.php" line="34" assertions="1" time="0.001760"/>
+    <testcase name="testVueUpdateProductVisitor" class="ProductControllerTest" classname="ProductControllerTest" file="/home/E214194U/public_html/CI/application/tests/controller/ProductControllerTest.php" line="39" assertions="1" time="0.088206"/>
+    <testcase name="testVueUpdateProductAdmin" class="ProductControllerTest" classname="ProductControllerTest" file="/home/E214194U/public_html/CI/application/tests/controller/ProductControllerTest.php" line="46" assertions="1" time="0.091062"/>
+  </testsuite>
+</testsuites>
